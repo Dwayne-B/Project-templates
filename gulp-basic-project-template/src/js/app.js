@@ -1,0 +1,6 @@
+"use strict";
+/*!
+* Start Bootstrap - Creative v7.0.4 (https://startbootstrap.com/theme/creative)
+* Copyright 2013-2021 Start Bootstrap
+* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-creative/blob/master/LICENSE)
+*/window.addEventListener("DOMContentLoaded", (function (e) { var n = $(".hamburger"); n.click((function () { console.log("clicked"), n.hasClass("is-active") ? n.removeClass("is-active") : n.addClass("is-active") })); var a = function () { var e = document.body.querySelector("#mainNav"); e && (0 === window.scrollY ? e.classList.remove("navbar-shrink") : e.classList.add("navbar-shrink")) }; a(), document.addEventListener("scroll", a), document.body.querySelector("#mainNav") && new bootstrap.ScrollSpy(document.body, { target: "#mainNav", offset: 74 }); var o = document.body.querySelector(".navbar-toggler");[].slice.call(document.querySelectorAll("#navbarResponsive .nav-link")).map((function (e) { e.addEventListener("click", (function () { "none" !== window.getComputedStyle(o).display && o.click() })) })) }));
