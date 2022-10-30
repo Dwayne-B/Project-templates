@@ -12,7 +12,7 @@ import concat from 'gulp-concat';
 import concatCss from 'gulp-concat-css';
 import imgMin from 'gulp-image';
 import postcss from 'gulp-postcss';
-import nodeSass from 'node-sass';
+
 
 import terser from 'gulp-terser';
 const { src, dest, series, parallel, task, watch } = gulp;
