@@ -1,0 +1,63 @@
+@use"../util/index" as u;
+
+html {
+
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--main-bg-color)
+}
+
+
+
+h1 {
+  font-size: u.toRem(48);
+
+}
+
+h2 {
+  font-size: u.toRem(24);
+  width: 100%;
+  margin-bottom: u.toRem(15);
+
+}
+
+h1,
+h2,
+#range-output {
+
+  font-family: var(--heading-font);
+  color: var(--primary-text-color);
+}
+
+p,
+#range-output {
+  font-size: u.toRem(24);
+}
+
+
+
+input,
+button {
+  cursor: pointer;
+}
+
+.btn {
+  font-size: u.toRem(17);
+  height: u.toRem(45);
+}
+
+.cap-btn {
+
+  text-transform: capitalize;
+}

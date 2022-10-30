@@ -1,0 +1,7 @@
+@use "sass:math";
+
+@function toRem($px) {
+  $base: 16;
+
+  @return math.div($px , $base)+rem
+}
